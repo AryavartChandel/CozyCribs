@@ -9,7 +9,7 @@ const BookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add functionality to send the booking data here
+    
     console.log('Booking Details:', { name, email, date });
     alert('Booking Successful!');
     setName('');
