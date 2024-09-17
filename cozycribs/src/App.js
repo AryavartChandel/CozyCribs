@@ -1,5 +1,6 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext'; // Import your ThemeProvider
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -8,9 +9,12 @@ import Contact from './components/Contact';
 import BookingForm from './components/BookingForm';
 import FeedbackForm from './components/FeedbackForm';
 
+const theme = { color: 'light' }; // Example theme
+
 const App = () => {
     return (
-        <div>
+        <ThemeProvider theme={theme}>
+        <Router>
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -20,8 +24,9 @@ const App = () => {
                 <Route path="/booking" element={<BookingForm />} />
                 <Route path="/feedback" element={<FeedbackForm />} />
             </Routes>
-        </div>
-    );
+            </Router>
+    </ThemeProvider>
+  );
 };
 
 export default App;

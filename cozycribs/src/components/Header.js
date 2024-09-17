@@ -1,9 +1,13 @@
 import React from 'react';
 import '../styles.css';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext'; // Import useTheme
 
-const Header = () => (
-    <header>
+const Header = () => {
+    const { theme, toggleTheme } = useTheme(); // Get theme and toggle function
+
+    return (
+    <header style={{ backgroundColor: theme.color === 'light' ? '#fff' : '#333' }}>
         <h1>Welcome to CozyCribs.com</h1>
         <nav>
             <ul>
@@ -15,7 +19,8 @@ const Header = () => (
                 <li><Link to="/feedback">Feedback</Link></li> {/* New link */}
             </ul>
         </nav>
+        <button onClick={toggleTheme}>Toggle Theme</button>
     </header>
 );
-
+};
 export default Header;

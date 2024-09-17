@@ -1,12 +1,24 @@
 import React from 'react';
 import '../styles.css';
+import useFetch from '../hooks/useFetch'; // Import custom hook
 
 const About = () => {
+    // Fetch the data inside the component
+    const { data, loading, error } = useFetch('/info.json'); // Mock data or actual API
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error.message}</div>;
+
     return (
         <section id="about">
             <h2>About Us</h2>
-            <p>CozyCribs is dedicated to providing the best homestay experiences. Our properties are handpicked and maintained to the highest standards.</p>
-            <p>Our story began with a simple idea: to create a platform where guests can easily find and book homestays that offer <em>authentic local experiences</em> and <em>comfortable accommodations</em>.</p>
+            {/* Conditionally render the fetched data */}
+            {data && (
+                <>
+                    <p>{data.description}</p>
+                    <p>{data.story}</p>
+                </>
+            )}
         </section>
     );
 };
