@@ -5,7 +5,7 @@ import About from './components/About';
 import Amenities from './components/Amenities';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import './components/styles.css';  // Global CSS
+import './styles.css';  // Global CSS
 
 function App() {
   return (
