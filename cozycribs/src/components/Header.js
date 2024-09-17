@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles.css';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext'; // Import useTheme
+import { useTheme } from '../context/ThemeContext'; 
 
 const Header = () => {
-    const { theme, toggleTheme } = useTheme(); // Get theme and toggle function
+    const { theme, toggleTheme } = useTheme(); 
 
     return (
     <header style={{ backgroundColor: theme.color === 'light' ? '#fff' : '#333' }}>

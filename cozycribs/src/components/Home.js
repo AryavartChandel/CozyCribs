@@ -10,7 +10,7 @@ const properties = [
 ];
 
 const Home = () => {
-    const { theme, toggleTheme } = useTheme(); // Destructure theme and toggleTheme
+    const { theme, toggleTheme } = useTheme(); 
 
     const expensiveFilter = useMemo(() => {
         return properties.filter(property => property.price > 120);

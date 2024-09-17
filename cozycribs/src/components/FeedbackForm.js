@@ -5,7 +5,7 @@ const FeedbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle feedback submission
+    
     console.log('Feedback:', feedback);
     alert('Feedback Submitted!');
     setFeedback('');

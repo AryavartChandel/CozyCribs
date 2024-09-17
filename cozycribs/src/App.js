@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './context/ThemeContext'; // Import your ThemeProvider
+import { ThemeProvider } from './context/ThemeContext'; 
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import BookingForm from './components/BookingForm';
 import FeedbackForm from './components/FeedbackForm';
 
-const theme = { color: 'light' }; // Example theme
+const theme = { color: 'light' }; 
 
 const App = () => {
     return (
