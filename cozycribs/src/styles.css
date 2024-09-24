@@ -285,8 +285,12 @@ footer {
   }
   
   .property-tile img {
-    width: 100%;
-    border-radius: 8px;
+    width: 100%;            /* Make the tile responsive */
+    max-width: 300px;      /* Sets a maximum width for the tile */
+    aspect-ratio: 4 / 3;   /* Maintains a 4:3 aspect ratio */
+    overflow: hidden;       /* Ensures that any overflow is hidden */
+    border-radius: 8px;    /* Optional: adds rounded corners to the tile */
+    margin: 10px;    
   }
   
   .property-tile h3 {
@@ -315,3 +319,4 @@ footer {
     background-color: #218838;
   }
   
+ 
