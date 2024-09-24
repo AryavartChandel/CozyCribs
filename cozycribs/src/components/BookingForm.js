@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-
+import axios from 'axios';
 
 const BookingForm = () => {
   const [name, setName] = useState('');
@@ -9,9 +9,26 @@ const BookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    console.log('Booking Details:', { name, email, date });
-    alert('Booking Successful!');
+
+    // Prepare booking data
+    const bookingData = {
+      name: name,
+      email: email,
+      bookingDate: date
+    };
+
+    // Send booking data to backend
+    axios.post('http://localhost:5000/api/bookings', bookingData)  // Corrected URL
+      .then(response => {
+        console.log('Booking successful:', response.data);
+        alert('Booking Successful!');
+      })
+      .catch(error => {
+        console.error('Error booking:', error);
+        alert('Booking failed! Please try again.');
+      });
+
+    // Clear form after submission
     setName('');
     setEmail('');
     setDate('');
