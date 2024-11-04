@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
-
+import '../styles/BookingForm.css'
 const BookingForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

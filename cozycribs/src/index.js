@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'; 
+import './styles/index.css'; 
 import { BrowserRouter } from 'react-router-dom'; 
 import { ThemeProvider } from './context/ThemeContext'; 
 import { createRoot } from 'react-dom/client';

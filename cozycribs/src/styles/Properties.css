@@ -1,0 +1,58 @@
+
+/* Properties Section */
+.properties-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.properties-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.property-tile {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.property-tile img {
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 4 / 3;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+.property-tile h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.property-tile p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.book-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.book-button:hover {
+    background-color: #218838;
+}

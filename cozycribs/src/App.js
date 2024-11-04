@@ -8,7 +8,7 @@ import Amenities from './components/Amenities';
 import Contact from './components/Contact';
 import BookingForm from './components/BookingForm';
 import FeedbackForm from './components/FeedbackForm';
-import Properties from './components/Properties'; // <-- Add this import
+import Properties from './components/Properties'; 
 
 const theme = { color: 'light' }; 
 

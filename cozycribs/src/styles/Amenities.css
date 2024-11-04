@@ -1,0 +1,45 @@
+/* Amenities Section Styles */
+#amenities {
+    padding: 20px;
+    max-width: 800px; /* Same max-width for consistency */
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#amenities h2 {
+    color: #333333;
+    font-size: 1.8em;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#amenities ul,
+#amenities ol {
+    margin: 10px 0;
+    padding-left: 20px; /* Indent list items */
+}
+
+#amenities li {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555555;
+    margin: 8px 0; /* Space between items */
+}
+
+.definition-list {
+    margin: 10px 0;
+}
+
+.definition-list dt {
+    font-weight: bold;
+    color: #d35400; /* Highlighted term color */
+}
+
+.definition-list dd {
+    margin-left: 20px; /* Indent description */
+    color: #555555;
+}
