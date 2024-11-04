@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles.css';
-import useFetch from '../hooks/useFetch'; // Import custom hook
+import '../styles/About.css';
+import useFetch from '../hooks/useFetch';
 
 const About = () => {
     const { data, loading, error } = useFetch('/info.json'); 
@@ -11,12 +11,13 @@ const About = () => {
     return (
         <section id="about">
             <h2>About Us</h2>
-            {}
-            {data && (
+            {data ? (
                 <>
                     <p>{data.description}</p>
                     <p>{data.story}</p>
                 </>
+            ) : (
+                <p>No information available.</p> // Fallback message
             )}
         </section>
     );

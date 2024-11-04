@@ -1,0 +1,24 @@
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0; /* Increased padding for a more spacious layout */
+    background-color: #333333;
+    color: #ffffff;
+    border-top: 4px solid #d35400;
+    animation: fadeInUp 1s ease-out;
+}
+
+.footer-links {
+    margin-top: 10px; /* Space above the links */
+}
+
+.footer-links a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #d35400; /* Change color on hover */
+}

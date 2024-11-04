@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles.css' // Ensure you're importing your CSS file
+import '../styles/Properties.css' // Ensure you're importing your CSS file
 
 const Properties = () => {
   const [houses, setHouses] = useState([]);

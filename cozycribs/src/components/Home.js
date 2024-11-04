@@ -1,7 +1,7 @@
 // src/components/Home.js
 import React, { useMemo } from 'react';
 import { useTheme } from '../context/ThemeContext'; // Import useTheme
-import './Home.css'; // CSS file for homepage styling
+import '../styles/Home.css'; // CSS file for homepage styling
 
 const properties = [
     { id: 1, name: 'Cozy Cottage', price: 100 },

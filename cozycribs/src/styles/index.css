@@ -1,0 +1,115 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #f4f4f4, #dddddd);
+    margin: 5px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Header Animation */
+section h2 {
+    color: #333333;
+    font-size: 1.8em;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+    animation: slideInRight 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+/* Text Styles */
+p.intro {
+    font-size: 1.1em;
+    color: #555555;
+    text-align: justify;
+    animation: fadeIn 1s ease-out;
+}
+
+.highlight {
+    font-size: 1.2em;
+    color: #d35400;
+    font-weight: bold;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    list-style-position: inside;
+}
+
+/* Definition List Styling */
+.definition-list dt {
+    font-weight: bold;
+    color: #223344;
+}
+
+.definition-list dd {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+/* Box Model Example */
+.box-model-demo {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid #d35400;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Positioning Example */
+.position-demo {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: #d35400;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Fixed Element */
+.fixed-element {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #223344;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext'; 
 
