@@ -6,7 +6,7 @@ const Properties = () => {
   const [houses, setHouses] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/houses')
+    axios.get('http://localhost:8080/api/houses')
       .then(response => setHouses(response.data))
       .catch(error => console.error('Error fetching houses:', error));
   }, []);

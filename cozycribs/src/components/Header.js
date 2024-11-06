@@ -15,7 +15,7 @@ const Header = () => {
                 <li><Link to="/about">About Us</Link></li> {/* Correct link for About Us */}
                 <li><Link to="/amenities">Amenities</Link></li> {/* Correct link for Amenities */}
                 <li><Link to="/contact">Contact</Link></li> {/* Correct link for Contact */}
-                <li><Link to="/properties">Explore Our Properties</Link></li> {/* <-- Add this */}
+                <li><Link to="/properties">Explore Properties</Link></li> {/* <-- Add this */}
                 <li><Link to="/booking">Booking</Link></li> {/* New link */}
                 <li><Link to="/feedback">Feedback</Link></li> {/* New link */}
             </ul>
