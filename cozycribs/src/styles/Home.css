@@ -150,3 +150,14 @@
     background-color: black;
     color: white;
 }
+
+
+/* Gallery Images Hover Effect */
+.gallery img, .feature img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover, .feature img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
