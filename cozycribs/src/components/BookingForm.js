@@ -38,7 +38,16 @@ const BookingForm = () => {
     <div className="form-container">
       <h2>Book Your Stay</h2>
       <form onSubmit={handleSubmit}>
-        
+      <label>
+          Name:
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            ref={nameRef}
+            required
+          />
+        </label>
         <label>
           Email:
           <input
