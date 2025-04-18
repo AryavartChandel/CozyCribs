@@ -11,7 +11,9 @@ const Amenities = () => {
                 <li className="amenity-item">Complimentary Breakfast</li>
             </ul>
             <ol>
-                <li className="amenity-item">Spacious Rooms</li>
+                {/*
+               <li className="amenity-item">Spacious Rooms</li>
+                */}
                 <li className="amenity-item">Local Tours and Guides</li>
                 <li className="amenity-item">Airport Transfers</li>
             </ol>
